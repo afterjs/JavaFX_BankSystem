@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="471.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="gui.Admin_mostrarAgenciasController">
+   <children>
+      <Text fill="#6b7893" layoutX="14.0" layoutY="39.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Todas as Agências" wrappingWidth="180.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="391.0" layoutY="19.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="339.0" layoutY="9.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ListView fx:id="view_allAgencias" layoutX="42.0" layoutY="173.0" prefHeight="204.0" prefWidth="385.0" />
+      <Text fill="#e78989" layoutX="33.0" layoutY="91.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Agencia:" wrappingWidth="96.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#e78989" layoutX="33.0" layoutY="123.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Estado:" wrappingWidth="81.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#e78989" layoutX="33.0" layoutY="153.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Gestor:" wrappingWidth="81.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_agencia" layoutX="121.0" layoutY="69.0" prefHeight="30.0" prefWidth="302.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_estado" layoutX="121.0" layoutY="101.0" prefHeight="30.0" prefWidth="302.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_gestor" layoutX="121.0" layoutY="133.0" prefHeight="30.0" prefWidth="302.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

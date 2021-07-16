@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Admin_menuController">
+   <children>
+      <Button layoutX="84.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#addRemoveAg" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #6b7893;" text="Adicionar/Remover Agência" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="84.0" layoutY="137.0" mnemonicParsing="false" onMouseClicked="#ativarDesativarAg" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #6b7893;" text="Ativar/Desativar Agência" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="87.0" fitWidth="334.0" layoutX="98.0" layoutY="38.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/admin.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="457.0" layoutY="16.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="84.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#mostrarAgencias" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #6b7893;" text="Mostrar Agências" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

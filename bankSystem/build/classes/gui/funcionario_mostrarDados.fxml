@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="333.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Funcionario_mostrarDadosController">
+   <children>
+      <Text fill="#e78989" layoutX="12.0" layoutY="46.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Visualizar Dados" wrappingWidth="390.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="579.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="518.0" layoutY="16.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="46.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN:" wrappingWidth="57.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_iban" layoutX="109.0" layoutY="91.0" prefHeight="30.0" prefWidth="221.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="363.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agência:" wrappingWidth="69.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_agencia" layoutX="436.0" layoutY="91.0" prefHeight="30.0" prefWidth="221.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="44.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Abertura:" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_data" layoutX="190.0" layoutY="129.0" prefHeight="30.0" prefWidth="189.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="393.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF:" wrappingWidth="36.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_nif" layoutX="441.0" layoutY="129.0" prefHeight="30.0" prefWidth="221.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="44.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" wrappingWidth="57.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_nome" layoutX="107.0" layoutY="166.0" prefHeight="30.0" prefWidth="491.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="393.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NºCivil:" wrappingWidth="69.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_civil" layoutX="457.0" layoutY="242.0" prefHeight="30.0" prefWidth="162.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="43.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Situação Laboral:" wrappingWidth="152.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_situacao" layoutX="186.0" layoutY="205.0" prefHeight="30.0" prefWidth="422.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="43.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Nascimento:" wrappingWidth="152.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_dataN" layoutX="195.0" layoutY="242.0" prefHeight="30.0" prefWidth="86.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="290.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade:" wrappingWidth="57.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_idade" layoutX="347.0" layoutY="242.0" prefHeight="30.0" prefWidth="36.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Text layoutX="43.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero de Telemovel:" wrappingWidth="180.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_num" layoutX="220.0" layoutY="280.0" prefHeight="30.0" prefWidth="378.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

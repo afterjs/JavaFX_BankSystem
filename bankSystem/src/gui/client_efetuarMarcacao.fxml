@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="357.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Client_efetuarMarcacaoController">
+   <children>
+      <Button layoutX="141.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#efetuarMarcacao" prefHeight="44.0" prefWidth="267.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Efetuar Marcação" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#e78989" layoutX="14.0" layoutY="42.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Solicitar Marcação" wrappingWidth="391.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#6b7893" layoutX="79.0" layoutY="155.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Data da Marcação:" wrappingWidth="174.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_agencia" layoutX="153.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="373.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="446.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="394.0" layoutY="13.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <DatePicker fx:id="data_marc" layoutX="274.0" layoutY="129.0" prefHeight="38.0" prefWidth="174.0" />
+      <Text fill="#6b7893" layoutX="78.0" layoutY="215.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Horas da Marcação:" wrappingWidth="190.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="horas_marc" layoutX="274.0" layoutY="190.0" prefHeight="38.0" prefWidth="174.0" promptText="Exemplo: 14" />
+   </children>
+</AnchorPane>

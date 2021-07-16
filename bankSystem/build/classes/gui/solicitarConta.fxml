@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SolicitarContaController">
+   <children>
+      <Button fx:id="btn_solicitar" layoutX="159.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#solicitarConta" prefHeight="44.0" prefWidth="295.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="SOLICITAR CONTA" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Agency FB Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#e78989" layoutX="14.0" layoutY="42.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Deseja soliciar uma conta bancaria nova?" wrappingWidth="391.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listViewAg" layoutX="53.0" layoutY="114.0" prefHeight="200.0" prefWidth="504.0" />
+      <Text fill="#6b7893" layoutX="53.0" layoutY="101.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Agências:" wrappingWidth="87.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fx:id="label_agencia" layoutX="153.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="373.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Button layoutX="530.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="478.0" layoutY="12.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

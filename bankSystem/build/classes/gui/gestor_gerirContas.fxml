@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestor_gerirContasController">
+   <children>
+      <Text fill="#e78989" layoutX="18.0" layoutY="43.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Gerir Pedidos de Contas - nome | nif" wrappingWidth="328.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#6b7893" layoutX="16.0" layoutY="85.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Nome do Pedido:" wrappingWidth="165.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="ViewContas" layoutX="81.0" layoutY="210.0" prefHeight="231.0" prefWidth="464.0" />
+      <Label fx:id="label_nome" layoutX="182.0" layoutY="63.0" prefHeight="30.0" prefWidth="341.0" textFill="#e78989">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAceitar" layoutX="26.0" layoutY="483.0" mnemonicParsing="false" onMouseClicked="#aceitarP" prefHeight="44.0" prefWidth="208.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Aceitar Pedido" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="541.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="489.0" layoutY="14.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="btn_recusar" layoutX="390.0" layoutY="483.0" mnemonicParsing="false" onMouseClicked="#recusarP" prefHeight="44.0" prefWidth="208.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Recusar Pedido" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#6b7893" layoutX="16.0" layoutY="120.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Agência Pedida:" wrappingWidth="155.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text fill="#6b7893" layoutX="16.0" layoutY="179.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="NIF:" wrappingWidth="93.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_agencia" layoutX="181.0" layoutY="98.0" prefHeight="30.0" prefWidth="341.0" textFill="#e78989">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_nif" layoutX="65.0" layoutY="159.0" prefHeight="30.0" prefWidth="341.0" textFill="#e78989">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Text fill="#6b7893" layoutX="15.0" layoutY="151.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Identificador Agência:" wrappingWidth="200.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_idAgencia" layoutX="223.0" layoutY="130.0" prefHeight="30.0" prefWidth="208.0" textFill="#e78989">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="757.0" prefWidth="865.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestor_adicionarFuncController">
+   <children>
+      <ImageView fitHeight="130.0" fitWidth="271.0" layoutX="302.0" layoutY="33.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/banco.png" />
+         </image>
+        
+      </ImageView>
+      <Text fill="#e78989" layoutX="42.0" layoutY="171.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Dados Login" wrappingWidth="290.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="207.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="312.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="223.0" AnchorPane.rightAnchor="330.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_username" layoutX="42.0" layoutY="228.0" prefHeight="40.0" prefWidth="250.0" AnchorPane.leftAnchor="42.0" AnchorPane.rightAnchor="568.0" />
+      <Text layoutX="42.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento" wrappingWidth="223.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="586.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nº Civil" wrappingWidth="163.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="475.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Situação Laboral" wrappingWidth="352.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="315.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número Telemovel" wrappingWidth="271.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_Situacao" layoutX="475.0" layoutY="356.0" prefHeight="40.0" prefWidth="352.0" />
+      <Text layoutX="582.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF" wrappingWidth="156.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#e78989" layoutX="42.0" layoutY="302.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Dados Pessoais" wrappingWidth="290.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Completo" wrappingWidth="352.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_nomeCompleto" layoutX="42.0" layoutY="356.0" prefHeight="40.0" prefWidth="408.0" />
+      <Text fill="#e78989" layoutX="42.0" layoutY="544.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Morada" wrappingWidth="290.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morada" wrappingWidth="207.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="581.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Postal" wrappingWidth="188.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="311.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cidade" wrappingWidth="156.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_nif" layoutX="577.0" layoutY="228.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="field_morada" layoutX="40.0" layoutY="603.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="field_cidade" layoutX="309.0" layoutY="603.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="field_cPostal" layoutX="577.0" layoutY="603.0" prefHeight="40.0" prefWidth="250.0" />
+      <Button layoutX="255.0" layoutY="676.0" mnemonicParsing="false" onMouseClicked="#addFunc" prefHeight="44.0" prefWidth="363.0" style="-fx-background-color: #6b7893;" text="Adicionar Funcionario" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <DatePicker fx:id="field_DataN" layoutX="42.0" layoutY="459.0" prefHeight="40.0" prefWidth="223.0" />
+      <PasswordField fx:id="field_password" layoutX="312.0" layoutY="229.0" prefHeight="40.0" prefWidth="250.0" />
+      <TextField fx:id="field_numTelemovel" layoutX="302.0" layoutY="459.0" prefHeight="40.0" prefWidth="244.0" />
+      <TextField fx:id="field_numCivil" layoutX="586.0" layoutY="459.0" prefHeight="40.0" prefWidth="237.0" />
+      <Button layoutX="790.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="738.0" layoutY="14.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

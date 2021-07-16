@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Funcionario_editarMarcacaoController">
+   <children>
+      <Text fill="#e78989" layoutX="17.0" layoutY="41.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Mudar Estado" wrappingWidth="180.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_ag" layoutX="110.0" layoutY="55.0" prefHeight="30.0" prefWidth="368.0" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_atua" layoutX="235.0" layoutY="350.0" mnemonicParsing="false" onMouseClicked="#atualizar" prefHeight="44.0" prefWidth="216.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Atualizar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="588.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="536.0" layoutY="12.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fill="#6b7893" layoutX="378.0" layoutY="92.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Estados" wrappingWidth="138.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="funcCombo" layoutX="378.0" layoutY="111.0" prefHeight="40.0" prefWidth="266.0" />
+      <Label fx:id="label_func" layoutX="175.0" layoutY="174.0" prefHeight="30.0" prefWidth="443.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_marcacao" layoutX="176.0" layoutY="215.0" prefHeight="30.0" prefWidth="449.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_data" layoutX="175.0" layoutY="254.0" prefHeight="30.0" prefWidth="449.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="input_comment" layoutX="38.0" layoutY="111.0" prefHeight="40.0" prefWidth="277.0" />
+      <ListView fx:id="listView" layoutX="42.0" layoutY="177.0" prefHeight="154.0" prefWidth="603.0" />
+      <Text fill="#6b7893" layoutX="41.0" layoutY="92.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Comentario" wrappingWidth="138.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Gestor_eliminarMarcController">
+   <children>
+      <Button fx:id="btn_removeFunc" layoutX="159.0" layoutY="441.0" mnemonicParsing="false" onMouseClicked="#removerFunc" prefHeight="44.0" prefWidth="295.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Eliminar Marcação" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="#e78989" layoutX="14.0" layoutY="42.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Deseja remover uma marcação?" wrappingWidth="391.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listViewMarc" layoutX="62.0" layoutY="216.0" prefHeight="200.0" prefWidth="504.0" />
+      <Text layoutX="53.0" layoutY="100.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Nome:" wrappingWidth="127.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="530.0" layoutY="22.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="478.0" layoutY="12.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="54.0" layoutY="136.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="NIF:" wrappingWidth="44.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="53.0" layoutY="174.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Data:" wrappingWidth="67.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="300.0" layoutY="174.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Estado:" wrappingWidth="82.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_nome" layoutX="126.0" layoutY="78.0" prefHeight="30.0" prefWidth="384.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_data" layoutX="107.0" layoutY="152.0" prefHeight="30.0" prefWidth="164.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_nif" layoutX="97.0" layoutY="114.0" prefHeight="30.0" prefWidth="191.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_cc" layoutX="373.0" layoutY="114.0" prefHeight="30.0" prefWidth="191.0" textAlignment="CENTER" textFill="#e78989">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_estado" layoutX="382.0" layoutY="152.0" prefHeight="30.0" prefWidth="164.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text layoutX="300.0" layoutY="135.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="ID:" wrappingWidth="36.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Label fx:id="label_id" layoutX="337.0" layoutY="113.0" prefHeight="30.0" prefWidth="136.0" textAlignment="CENTER" textFill="#6b7893">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

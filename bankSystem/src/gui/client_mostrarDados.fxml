@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Client_mostrarDadosController">
+   <children>
+      <TextField fx:id="field_nomeAg" disable="true" layoutX="20.0" layoutY="130.0" prefHeight="40.0" prefWidth="199.0" />
+      <Text fill="#e78989" layoutX="12.0" layoutY="46.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Visualizar Dados da Conta" wrappingWidth="390.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button layoutX="579.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="518.0" layoutY="16.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="20.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome da Agencia" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="236.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Abertura" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="446.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Completo" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="275.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Situação Laboral" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="517.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telemovel" wrappingWidth="118.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_num" disable="true" layoutX="522.0" layoutY="219.0" prefHeight="40.0" prefWidth="118.0" />
+      <TextField fx:id="field_situacao" disable="true" layoutX="275.0" layoutY="219.0" prefHeight="40.0" prefWidth="231.0" />
+      <TextField fx:id="field_nomeC" disable="true" layoutX="20.0" layoutY="219.0" prefHeight="40.0" prefWidth="238.0" />
+      <TextField fx:id="field_abertura" disable="true" layoutX="231.0" layoutY="130.0" prefHeight="40.0" prefWidth="199.0" />
+      <TextField fx:id="field_iban" disable="true" layoutX="441.0" layoutY="130.0" prefHeight="40.0" prefWidth="199.0" />
+      <TextField fx:id="field_CodCC" disable="true" layoutX="24.0" layoutY="303.0" prefHeight="40.0" prefWidth="301.0" />
+      <Text layoutX="26.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Código Cívil" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="347.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de Indentificador Fiscal" wrappingWidth="261.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_nif" disable="true" layoutX="349.0" layoutY="303.0" prefHeight="40.0" prefWidth="292.0" />
+      <TextField fx:id="field_dataN" disable="true" layoutX="26.0" layoutY="389.0" prefHeight="40.0" prefWidth="301.0" />
+      <Text layoutX="26.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento" wrappingWidth="158.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="351.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Idade" wrappingWidth="144.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_idade" disable="true" layoutX="351.0" layoutY="389.0" prefHeight="40.0" prefWidth="292.0" />
+   </children>
+</AnchorPane>

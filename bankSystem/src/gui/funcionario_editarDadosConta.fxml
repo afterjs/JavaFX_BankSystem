@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Funcionario_editarDadosContaController">
+   <children>
+      <TextField fx:id="field_dtNastring" disable="true" layoutX="378.0" layoutY="287.0" prefHeight="40.0" prefWidth="227.0" />
+      <Text fill="#e78989" layoutX="12.0" layoutY="46.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-underline: underline;" text="Alterar Dados" wrappingWidth="390.0">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn_editar" layoutX="486.0" layoutY="352.0" mnemonicParsing="false" onMouseClicked="#modoEdit" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Modo Edição OFF" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="579.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#logout" style="-fx-background-color: #6b7893;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="44.0" fitWidth="80.0" layoutX="518.0" layoutY="16.0" onMouseClicked="#voltar" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@resources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="63.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome Completo:" wrappingWidth="130.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_nome" disable="true" layoutX="206.0" layoutY="104.0" prefHeight="40.0" prefWidth="397.0" />
+      <TextField fx:id="field_numero" disable="true" layoutX="63.0" layoutY="287.0" prefHeight="40.0" prefWidth="227.0" />
+      <Text layoutX="63.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Situação Laboral:" wrappingWidth="130.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="field_situacao" disable="true" layoutX="207.0" layoutY="178.0" prefHeight="40.0" prefWidth="183.0" />
+      <Text layoutX="63.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Telemovel:" wrappingWidth="207.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="378.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Nascimento" wrappingWidth="207.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="field_dataN" layoutX="378.0" layoutY="287.0" prefHeight="40.0" prefWidth="227.0" />
+      <Button fx:id="btn_atualizar" disable="true" layoutX="25.0" layoutY="352.0" mnemonicParsing="false" onMouseClicked="#atualizarDados" prefHeight="44.0" prefWidth="152.0" style="-fx-background-color: #6b7893; -fx-border-radius: 100px;" text="Atualizar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="field_cc" disable="true" layoutX="466.0" layoutY="176.0" prefHeight="40.0" prefWidth="139.0" />
+      <Text layoutX="395.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NºCivil:" wrappingWidth="65.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
