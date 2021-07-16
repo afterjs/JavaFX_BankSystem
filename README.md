@@ -1,48 +1,15 @@
-# WeControl - School Work
-* This site was a college assignment where we had to create a rest api in NODEJS along with ORM Sequelize, Express, Json Web Token and MySQL.
+# BankSystem - School Work
+* Project with JavaFX Application with MySQL. This application is a bank system where we can manage employees, companies, money movements, appointments, and many other options.
 
-*I am not validating the session on the client side, I just use protection for the API. I made some redirects with javascript checking if there is a token in my local storage :)*
+## Dependencies
+* Connector/J 8.0.25
 
+### Connectr J Mysql Documentation
+* https://dev.mysql.com/downloads/connector/j/
+> Donwload as Platafomr Independent
 
-# Dependencies
-* NodeJS
-* bcryptjs
-* body-parser
-* cors
-* express
-* fastest-validator
-* jsonwebtoken
-* mysql2
-* nodemon
-* sequelize
-* sequelize-cli
+### Data Base
+* I added a database export. We use Mysql with relational.
 
-# Packages and Documentation
-> npm install 
-* Install node module package
-> npm install bcryptjs
-* https://www.npmjs.com/package/bcryptjs
-> npm install body-parser
-* https://www.npmjs.com/package/body-parser
-> npm install cors
-* https://www.npmjs.com/package/cors 
-> npm install express
-* https://www.npmjs.com/package/express
-> npm i fastest-validator --save
-* https://www.npmjs.com/package/fastest-validator 
-> npm install jsonwebtoken
-* https://www.npmjs.com/package/jsonwebtoken
-* https://jwt.io
-> npm install --save mysql2
-* https://www.npmjs.com/package/mysql2
-> npm install nodemon
-* https://www.npmjs.com/package/nodemon
-> npm i sequelize
-* https://www.npmjs.com/package/sequelize
-
-https://youtu.be/WUnRw7NxNkg
-
-
-
-
-
+### Video showing the project (it's in Portuguese, sorry :) )
+* https://youtu.be/WUnRw7NxNkg
